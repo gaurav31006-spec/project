@@ -1,0 +1,155 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* FULL PAGE CONTAINER */
+.register-container {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* FORM BOX */
+.register-box {
+  width: 100%;
+  max-width: 900px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 30px 32px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+/* TITLE */
+.register-box h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-weight: 700;
+  color: #333;
+}
+
+/* FORM */
+.register-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* FORM GROUP */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #555;
+}
+
+.form-group input {
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #6a5acd;
+  box-shadow: 0 0 0 2px rgba(106, 90, 205, 0.2);
+}
+
+/* FLEX ROWS FOR COUNTRY */
+.flex {
+  display: flex;
+  gap: 12px;
+}
+
+/* SUBMIT BUTTON */
+.btn {
+  margin-top: 20px;
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(135deg, #6a5acd, #836fff);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(106, 90, 205, 0.4);
+}
+
+/* RESPONSIVE: TABLET */
+@media (max-width: 768px) {
+  .register-box {
+    padding: 24px 20px;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+}
+
+/* RESPONSIVE: MOBILE */
+@media (max-width: 480px) {
+  .register-container {
+    padding: 12px;
+  }
+
+  .register-box {
+    padding: 20px 16px;
+    max-height: 95vh;
+  }
+
+  .register-box h2 {
+    font-size: 20px;
+  }
+
+  .btn {
+    font-size: 15px;
+  }
+}
+
+/* CENTER TEXT */
+.donut-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* SMALL GREY TEXT (Interactions) */
+.donut-title {
+  font-size: 13px;
+  color: #9ca3af; /* soft grey like Instagram */
+  letter-spacing: 0.3px;
+  margin-bottom: 6px;
+}
+
+/* BIG NUMBER */
+.donut-number {
+  font-size: 38px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1;
+}
+

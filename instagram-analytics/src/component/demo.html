@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reel Insights</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="insights-container">
+  <h2>Reel insights</h2>
+
+  <p class="subtitle">When people liked your reel</p>
+
+  <!-- Chart -->
+  <div class="chart-box">
+    <svg viewBox="0 0 300 120" class="line-chart">
+      <!-- grid lines -->
+      <line x1="0" y1="30" x2="300" y2="30" class="grid"/>
+      <line x1="0" y1="60" x2="300" y2="60" class="grid"/>
+      <line x1="0" y1="90" x2="300" y2="90" class="grid"/>
+
+      <!-- line -->
+      <polyline
+        points="0,70 60,80 120,72 180,90 240,75 300,40"
+        class="chart-line"
+      />
+    </svg>
+
+    <div class="x-axis">
+      <span>0:00</span>
+      <span>0:06</span>
+    </div>
+  </div>
+
+  <!-- Stats -->
+  <div class="stats">
+    <div><span>Likes</span><span>74</span></div>
+    <div><span>Shares</span><span>9</span></div>
+    <div><span>Saves</span><span>5</span></div>
+    <div><span>Reposts</span><span>3</span></div>
+    <div><span>Comments</span><span>0</span></div>
+  </div>
+
+  <!-- Profile activity -->
+  <div class="profile">
+    <span>Profile activity</span>
+    <span>0</span>
+  </div>
+
+  <div class="profile">
+    <span>Follows</span>
+    <span>0</span>
+  </div>
+</div>
+
+</body>
+</html>

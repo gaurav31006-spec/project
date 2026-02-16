@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont;
+}
+
+body {
+  background: #000;
+  color: #fff;
+}
+
+.insights-container {
+  max-width: 420px;
+  margin: auto;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #b3b3b3;
+  margin-bottom: 12px;
+}
+
+.chart-box {
+  background: #0d0d0d;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.line-chart {
+  width: 100%;
+  height: 120px;
+}
+
+.grid {
+  stroke: #222;
+  stroke-width: 1;
+}
+
+.chart-line {
+  fill: none;
+  stroke: #ff3fd1;
+  stroke-width: 2;
+}
+
+.x-axis {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #888;
+  margin-top: 6px;
+}
+
+.stats div,
+.profile {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #1c1c1c;
+  font-size: 15px;
+}
+
+.profile {
+  margin-top: 8px;
+}
