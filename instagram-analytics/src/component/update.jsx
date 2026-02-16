@@ -35,7 +35,7 @@ const Update = () => {
 
     function formhandeler(e) {
         e.preventDefault();
-        axios.patch('http://10.59.43.108:3000/update/696b6e975ddc0327d242191a', {  title, time, like, repost, view, watchtime, reach, img, share, cmt,c1, p1, c2, p2, c3, p3, c4, p4, c5, p5  })
+        axios.patch(import.meta.env.VITE_BACKEND_URL+'/update/696b6e975ddc0327d242191a', {  title, time, like, repost, view, watchtime, reach, img, share, cmt,c1, p1, c2, p2, c3, p3, c4, p4, c5, p5  })
 
         // axios.patch('http://10.59.43.108:3000/update/696b6e975ddc0327d242191a', {})
             .then(result => {

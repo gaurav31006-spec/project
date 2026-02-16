@@ -25,7 +25,7 @@ const ReelInsights = () => {
   useEffect(() => {
     const getData = async () => {
       try {
-        const res = await axios.get("http://10.59.43.108:3000/show");
+        const res = await axios.get(import.meta.env.VITE_BACKEND_URL+"/show");
         setUsers(res.data)
         const d = res.data[0];
 
